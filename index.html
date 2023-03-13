@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Оберіть дати</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Оберіть дві дати</h1>
+		<label for="date1">Дата 1:</label>
+		<input type="date" id="date1">
+		<label for="date2">Дата 2:</label>
+		<input type="date" id="date2">
+
+		<label for="preset">Пресет:</label>
+		<select id="preset">
+			<option value="none">Без пресету</option>
+			<option value="week">Тиждень</option>
+			<option value="month">Місяць</option>
+		</select>
+
+		<button onclick="calculate()">Розрахувати</button>
+		<p id="result"></p>
+
+		<table id="resultsTable">
+			<thead>
+				<tr>
+					<th>Стартова дата</th>
+					<th>Кінцева дата</th>
+					<th>Результат виміру</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
